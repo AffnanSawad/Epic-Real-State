@@ -2,17 +2,21 @@ import Cards from "../Cards/Cards";
 import Footer from "../Footer/Footer";
 import Hero from "../Hero/Hero";
 import Nav from "../Nav/Nav";
+import Poster from "../Poster/Poster";
 
 
 const Home = () => {
     return (
-        <div>
+        <div className=" max-w-7xl mx-auto " >
              
     <Nav></Nav>
        
-       <div className="  max-w-7xl mx-auto ml-32">
+      
        <Hero></Hero>
-       </div>
+       <Poster></Poster>
+       
+       
+       
 
 
      <Cards></Cards>
