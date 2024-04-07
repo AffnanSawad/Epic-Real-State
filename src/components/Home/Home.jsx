@@ -3,13 +3,16 @@ import Footer from "../Footer/Footer";
 import Hero from "../Hero/Hero";
 import Nav from "../Nav/Nav";
 import Poster from "../Poster/Poster";
+import Update from "../Update/Update";
 
 
 const Home = () => {
     return (
-        <div className=" max-w-7xl mx-auto " >
+        <div className=" md:max-w-7xl mx-auto " >
              
     <Nav></Nav>
+
+    <Update></Update>
        
       
        <Hero></Hero>
@@ -19,7 +22,17 @@ const Home = () => {
        
 
 
-     <Cards></Cards>
+     <div className="md:max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3" >
+     
+     </div>
+
+     <div className="grid grid-cols-1 " >
+
+     <Cards> </Cards>
+
+     </div>
+
+   
 
 
     <Footer></Footer>

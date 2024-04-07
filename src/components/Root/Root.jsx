@@ -1,3 +1,4 @@
+
 import Home from "../Home/Home";
 
 const Root = () => {
@@ -5,6 +6,7 @@ const Root = () => {
         <div>
             
        <Home></Home>
+       
        
 
         </div>

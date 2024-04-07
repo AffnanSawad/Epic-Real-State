@@ -10,6 +10,8 @@ import {
 import Root from './components/Root/Root';
 import Home from './components/Home/Home';
 import Error from './components/Error/Error';
+import Contact from './components/Contact/Contact';
+import Stat from './components/Stat/Stat';
 
 
 const router = createBrowserRouter([
@@ -18,13 +20,22 @@ const router = createBrowserRouter([
     element: <Root></Root> ,
     errorElement: <Error> </Error>,
 
-
     children: [
 
+   
    {
     path: '/home',
     element: <Home></Home>
+   },
+   {
+    path: '/contact',
+    element: <Contact></Contact>
+   },
+   {
+    path: '/stat',
+    element: <Stat></Stat>
    }
+  
 
 
 

@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "estate_title": "Luxurious Villa with Ocean View",
+      "segment_name": "Luxury",
+      "description": "A stunning villa with breathtaking ocean views, featuring modern architecture and luxurious amenities.",
+      "price": "$1,500,000",
+      "status": "rent",
+      "area": "5000 sq ft",
+      "location": "Coastal Heights, California",
+      "facilities": ["Swimming Pool", "Gym", "Home Theater"],
+      "image": "https://i.ibb.co/4ZHBrNX/3d-electric-car-building.jpg"
+    },
+    {
+      "id": 2,
+      "estate_title": "Modern Apartment in Downtown",
+      "segment_name": "Premium",
+      "description": "Contemporary apartment located in the heart of the city, offering convenience and style.",
+      "price": "$800,000",
+      "status": "sale",
+      "area": "1500 sq ft",
+      "location": "Downtown Metropolis, New York",
+      "facilities": ["Gated Community", "Fitness Center", "Concierge Service"],
+      "image": "https://i.ibb.co/DL0vtzb/analog-landscape-city-with-buildings.jpg"
+    },
+    {
+      "id": 3,
+      "estate_title": "Cozy Family Home with Garden",
+      "segment_name": "Standard",
+      "description": "Charming family home with a spacious garden, perfect for outdoor gatherings and relaxation.",
+      "price": "$400,000",
+      "status": "sold",
+      "area": "2500 sq ft",
+      "location": "Suburban Retreat, Texas",
+      "facilities": ["Backyard Garden", "Fireplace", "Garage"],
+      "image": "https://i.ibb.co/MSNL1WC/house-isolated-field.jpg"
+    },
+    {
+      "id": 4,
+      "estate_title": "Luxury Penthouse with City Views",
+      "segment_name": "Luxury",
+      "description": "Elegant penthouse offering panoramic city views and top-of-the-line amenities for a luxurious lifestyle.",
+      "price": "$2,200,000",
+      "status": "rent",
+      "area": "3500 sq ft",
+      "location": "Metropolis Central, California",
+      "facilities": ["Rooftop Terrace", "Spa", "24/7 Security"],
+      "image": "https://i.ibb.co/yqFZ04Y/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table.jpg"
+    },
+    {
+      "id": 5,
+      "estate_title": "Spacious Family Villa",
+      "segment_name": "Standard",
+      "description": "A spacious villa perfect for families, featuring multiple bedrooms, a backyard, and modern amenities.",
+      "price": "$600,000",
+      "status": "sale",
+      "area": "3000 sq ft",
+      "location": "Suburban Oasis, Florida",
+      "facilities": ["Backyard", "Jacuzzi", "Study Room"],
+      "image": "https://i.ibb.co/vXLYz1B/luxury-pool-villa-spectacular-contemporary-design-digital-art-real-estate-home-house-property-ge.jpg"
+    },
+    {
+      "id": 6,
+      "estate_title": "Chic Urban Loft",
+      "segment_name": "Premium",
+      "description": "Stylish loft apartment located in the vibrant urban center, offering luxury and convenience.",
+      "price": "$1,000,000",
+      "status": "rent",
+      "area": "2000 sq ft",
+      "location": "Downtown Arts District, California",
+      "facilities": ["Open Floor Plan", "City Views", "Modern Kitchen"],
+      "image":"https://i.ibb.co/hYL5RYZ/charming-yellow-house-with-wooden-windows-green-grassy-garden.jpg" 
+    }
+  ]
+  
