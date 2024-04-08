@@ -12,6 +12,8 @@ import Home from './components/Home/Home';
 import Error from './components/Error/Error';
 import Contact from './components/Contact/Contact';
 import Stat from './components/Stat/Stat';
+import Login from './components/login/Login';
+import Register from './components/register/Register';
 
 
 
@@ -35,6 +37,14 @@ const router = createBrowserRouter([
    {
     path: '/stat',
     element: <Stat> </Stat>
+   },
+   {
+    path: '/login',
+    element: <Login></Login>
+   },
+   {
+    path: '/signup',
+    element: <Register></Register>
    },
   
   
