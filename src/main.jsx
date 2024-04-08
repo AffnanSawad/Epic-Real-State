@@ -14,6 +14,7 @@ import Contact from './components/Contact/Contact';
 import Stat from './components/Stat/Stat';
 
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -24,7 +25,7 @@ const router = createBrowserRouter([
 
    
    {
-    path: '/home',
+    path: '/',
     element: <Home></Home>
    },
    {
@@ -33,8 +34,9 @@ const router = createBrowserRouter([
    },
    {
     path: '/stat',
-    element: <Stat></Stat>
-   }
+    element: <Stat> </Stat>
+   },
+  
   
 
 

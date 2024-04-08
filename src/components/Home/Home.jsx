@@ -1,7 +1,5 @@
 import Cards from "../Cards/Cards";
-import Footer from "../Footer/Footer";
 import Hero from "../Hero/Hero";
-import Nav from "../Nav/Nav";
 import Poster from "../Poster/Poster";
 import Update from "../Update/Update";
 
@@ -10,9 +8,9 @@ const Home = () => {
     return (
         <div className=" md:max-w-7xl mx-auto " >
              
-    <Nav></Nav>
+    
 
-    <Update></Update>
+       <Update></Update>
        
       
        <Hero></Hero>
@@ -35,7 +33,6 @@ const Home = () => {
    
 
 
-    <Footer></Footer>
 
     
     

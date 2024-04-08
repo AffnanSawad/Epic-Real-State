@@ -1,8 +1,8 @@
 
 const Contact = () => {
     return (
-        <div className="overflow-x-auto">
-        <table className="table table-zebra">
+        <div className="overflow-x-auto  ">
+        <table className="table table-zebra max-w-7xl mx-auto  text-center mt-20 mb-20">
           {/* head */}
           <thead>
             <tr>
