@@ -1,5 +1,5 @@
 
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 
@@ -8,6 +8,9 @@ import { AuthContext } from "../../Providers/AuthProvider";
 const Register = () => {
 
     const {register} = useContext(AuthContext)
+    const [error,seterror] = useState('')
+    const [noerror,noseterror] = useState('')
+
    
    
 
@@ -23,6 +26,27 @@ const Register = () => {
      const password= e.target.password.value
      const name = e.target.name.value
      const url = e.target.url.value
+
+
+
+
+     if(password.length < 6 ){
+        seterror('PASSWORD must be larger than 6 words');
+       
+        return;
+    }
+     if(password.length > 6 ){
+        noseterror('registered succesfully')
+       
+        return;
+    }
+    
+    
+    
+    
+    
+    
+    seterror('')
 
 
      console.log(email,password,name,url)
@@ -89,6 +113,16 @@ const Register = () => {
       <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
     </label>
   </div>
+
+  {
+        error && <h4 className=" bg-red-500">{error} </h4>
+
+    }
+  {
+        noerror && <h4 className=" bg-green-500">{noerror} </h4>
+
+    }
+
   <div className="form-control mt-6">
     <button className="btn btn-primary">Register</button>
   </div>

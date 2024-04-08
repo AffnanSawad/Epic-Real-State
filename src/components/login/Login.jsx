@@ -9,7 +9,10 @@ import { AuthContext } from "../../Providers/AuthProvider";
 const Login = () => {
 
 
-    const {login} = useContext(AuthContext)
+    const {login,googlelogin,facebooklogin,setuser} = useContext(AuthContext)
+
+
+  
 
     const handlelogin = e => {
 
@@ -33,6 +36,21 @@ const Login = () => {
    
    
        }
+
+       //googlelogin
+
+       const handlegooglelogin = ()=>{
+
+        googlelogin()
+        .then(result => setuser(result.user))
+    }
+
+    //facebooklogin
+       const handlefacebooklogin = ()=>{
+
+        facebooklogin()
+        .then(result => setuser(result.user))
+    }
 
 
     return (
@@ -64,8 +82,21 @@ const Login = () => {
                 </label>
               </div>
               <div className="form-control mt-6">
-                <button className="btn btn-primary">Login</button>
+                <button className="btn btn-error">Login</button>
               </div>
+
+            <div>
+
+              
+              
+              <div className="flex gap-4">
+              <button onClick={handlegooglelogin} className="btn btn-secondary"> GOOGLE LOG IN </button>
+              <button onClick={handlefacebooklogin} className="btn btn-primary"> FACEBOOK LOG IN </button>
+              </div>
+
+            </div>
+
+
               <p>If you  dont have  any account. Please <Link to='/signup' >
               
               <button className="btn btn-accent">Register</button> 
