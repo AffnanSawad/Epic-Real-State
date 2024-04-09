@@ -15,6 +15,8 @@ const Home = () => {
       
        <Hero></Hero>
        <Poster></Poster>
+
+
        
        
        

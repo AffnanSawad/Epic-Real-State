@@ -18,6 +18,7 @@ import AuthProvider from './Providers/AuthProvider';
 import UpdateProfile from './components/UpdateProfile/UpdateProfile';
 import UserProfile from './components/UserProfile/UserProfile';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import CardDetails from './CardDetails/CardDetails';
 
 
 
@@ -39,10 +40,13 @@ const router = createBrowserRouter([
    {
     path: '/contact',
     element: <Contact></Contact>
+    
    },
    {
     path: '/stat',
-    element: <Stat> </Stat>
+    element: <PrivateRoute>
+      <Stat> </Stat>
+    </PrivateRoute>
    },
    {
     path: '/login',
@@ -63,6 +67,13 @@ const router = createBrowserRouter([
     element: <PrivateRoute>
       <UserProfile> </UserProfile>
     </PrivateRoute>
+   },
+   {
+    path: '/card/:id',
+    element: <PrivateRoute>
+       <CardDetails></CardDetails>
+    </PrivateRoute>,
+    loader: ()=> fetch('../public/data.json')
    },
   
   

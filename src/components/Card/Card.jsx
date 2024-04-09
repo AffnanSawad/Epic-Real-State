@@ -1,6 +1,7 @@
 import { FaLocationDot } from "react-icons/fa6";
 import { FcSalesPerformance } from "react-icons/fc";
 import { BsFillHouseAddFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 
 
@@ -44,7 +45,16 @@ const Card = ({card}) => {
 </div>
 
     <div className="card-actions mt-4 ">
-      <button className="btn btn-accent">VIEW DETAILS</button>
+  
+
+  <Link to={`/card/${id}`} >
+  
+  <button className="btn btn-accent">VIEW DETAILS</button>
+
+   
+  </Link>
+
+
     </div>
   </div>
 </div>

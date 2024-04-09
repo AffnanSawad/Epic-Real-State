@@ -23,11 +23,20 @@ const Nav = () => {
      
      <li> <NavLink to='/' >    Home  </NavLink>  </li>
      <li> <NavLink to='/contact' > Contact Us   </NavLink>  </li>
-     <li> <NavLink to='/stat'  >    Statistics  </NavLink>  </li>
+
      <li> <NavLink to='/login'  > Log In   </NavLink>  </li>
      <li> <NavLink to='/signup'  > Sign Up  </NavLink>  </li>
     
+
+   
     {
+      user && 
+      
+      <li> <NavLink to='/stat'  >    Statistics  </NavLink>  </li>
+      
+       
+    }
+        {
       user && 
       
         <li> <NavLink to='/update'  > Update Profile  </NavLink>  </li>
