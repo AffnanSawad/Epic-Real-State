@@ -40,6 +40,13 @@ const Register = () => {
        
         return;
     }
+   if(!/^(?=.*[a-z])(?=.*[A-Z]).+$/.test(password)  ){
+  
+    seterror('password must contain atleast one UPPER & LOWER case letter')
+
+    return;
+
+   }
     
     
     
