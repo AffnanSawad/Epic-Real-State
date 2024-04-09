@@ -1,7 +1,6 @@
 import {useLoaderData,useParams} from 'react-router-dom'
-import { FaLocationDot } from "react-icons/fa6";
-import { FcSalesPerformance } from "react-icons/fc";
-import { BsFillHouseAddFill } from "react-icons/bs";
+import 'animate.css';
+
 
 
 
@@ -15,8 +14,14 @@ const CardDetails = () => {
   
 
     return (
+
+        
+
       
         <div className='grid grid-cols-4  mt-20 mb-20'>
+
+
+
 
     <div className='grid col-span-3'>
 
@@ -38,6 +43,10 @@ const CardDetails = () => {
 
 
     <div className=' ml-10 w-96 mt-4 '>
+
+
+    <h1 className="animate__animated animate__bounceIn text-4xl font-bold italic  text-blue-900"   > EXCLUSIVES : </h1>
+
 
 
    <img className=' mt-5' src="https://i.ibb.co/QDqqgdM/real-estate-banner-39.jpg" />
