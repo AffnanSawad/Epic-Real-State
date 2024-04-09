@@ -1,6 +1,6 @@
 
-import { FacebookAuthProvider, GoogleAuthProvider, createUserWithEmailAndPassword, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
-import { createContext, useState } from "react";
+import { FacebookAuthProvider, GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
+import { createContext, useEffect, useState } from "react";
 import auth from "../Firebase/firebase.config";
 
 
@@ -72,6 +72,29 @@ const AuthProvider = ({children} ) => {
 
         return signInWithPopup(auth,facebookprovider)
       }
+      //logout
+
+      const logout1 = ()=>{
+        return signOut(auth);
+      }
+
+      useEffect( ()=> {
+  
+        const unsubscribe=  onAuthStateChanged(auth, (currentuser) => {
+            if (currentuser) {
+             
+             setuser(currentuser)
+            } 
+            else {
+            setuser(null)
+            }
+          });
+  
+          return ()=> {
+            unsubscribe();
+          }
+    
+         },[])
     
 
 
@@ -86,6 +109,7 @@ const AuthProvider = ({children} ) => {
         logout,
         googlelogin,
         facebooklogin,
+        logout1,
         
        
     }
