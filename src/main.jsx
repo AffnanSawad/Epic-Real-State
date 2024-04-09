@@ -19,6 +19,7 @@ import UpdateProfile from './components/UpdateProfile/UpdateProfile';
 import UserProfile from './components/UserProfile/UserProfile';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import CardDetails from './CardDetails/CardDetails';
+import Extra1 from './components/extra1/Extra1';
 
 
 
@@ -74,7 +75,9 @@ const router = createBrowserRouter([
        <CardDetails></CardDetails>
     </PrivateRoute>,
     loader: ()=> fetch('../public/data.json')
-   },
+   }
+
+ 
   
   
 

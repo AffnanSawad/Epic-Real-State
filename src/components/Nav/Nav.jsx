@@ -89,9 +89,13 @@ const Nav = () => {
      
 <div>
 
+<Link to='/'>
 
-  
 <button onClick={handlelogout} className="btn btn-error">Sign Out</button>
+
+
+</Link>
+  
 </div>
 
 
