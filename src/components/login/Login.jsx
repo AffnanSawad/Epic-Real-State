@@ -90,9 +90,9 @@ const Login = () => {
               
               
               <div className="flex gap-4">
-              <button onClick={handlegooglelogin} className="btn btn-secondary"> GOOGLE LOG IN </button>
               <button onClick={handlefacebooklogin} className="btn btn-primary"> FACEBOOK LOG IN </button>
-              </div>
+
+            <button onClick={handlegooglelogin} className="btn btn-secondary"> GOOGLE LOG IN </button>              </div>
 
             </div>
 
