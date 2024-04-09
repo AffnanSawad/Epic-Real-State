@@ -9,7 +9,8 @@ const Register = () => {
 
     const {register} = useContext(AuthContext)
     const [error,seterror] = useState('')
-    const [noerror,noseterror] = useState('')
+    //const [noerror,noseterror] = useState('')
+
 
    
    
@@ -35,11 +36,7 @@ const Register = () => {
        
         return;
     }
-     if(password.length > 6 ){
-        noseterror('registered succesfully')
-       
-        return;
-    }
+    
    if(!/^(?=.*[a-z])(?=.*[A-Z]).+$/.test(password)  ){
   
     seterror('password must contain atleast one UPPER & LOWER case letter')
@@ -47,6 +44,11 @@ const Register = () => {
     return;
 
    }
+   //if(password.length > 6 ){
+   // noseterror('registered succesfully')
+   
+   // return;
+  //}
     
     
     
@@ -121,14 +123,13 @@ const Register = () => {
     </label>
   </div>
 
+  
+ 
   {
         error && <h4 className=" bg-red-500">{error} </h4>
 
     }
-  {
-        noerror && <h4 className=" bg-green-500">{noerror} </h4>
-
-    }
+  
 
 
   <div className="form-control mt-6">
