@@ -21,7 +21,7 @@ const Cards = () => {
 
 
     return (
-        <div  className="  md:grid grid-cols-3 " >
+        <div  className=" md:grid  grid-cols-3  " >
             
         {
     

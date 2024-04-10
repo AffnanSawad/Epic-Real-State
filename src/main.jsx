@@ -19,8 +19,7 @@ import UpdateProfile from './components/UpdateProfile/UpdateProfile';
 import UserProfile from './components/UserProfile/UserProfile';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import CardDetails from './CardDetails/CardDetails';
-import Extra1 from './components/extra1/Extra1';
-
+import {HelmetProvider} from 'react-helmet-async'
 
 
 
@@ -90,7 +89,11 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <AuthProvider>
-    <RouterProvider router={router} />
+      <HelmetProvider>
+      
+      <RouterProvider router={router} />
+
+      </HelmetProvider>
     </AuthProvider>
   </React.StrictMode>,
 )

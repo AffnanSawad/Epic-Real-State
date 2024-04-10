@@ -1,5 +1,6 @@
 import {useLoaderData,useParams} from 'react-router-dom'
 import 'animate.css';
+import { Helmet } from 'react-helmet-async';
 
 
 
@@ -20,7 +21,9 @@ const CardDetails = () => {
       
         <div className='grid grid-cols-4  mt-20 mb-20'>
 
-
+  <Helmet>
+          <title> EPIC | DETAILS </title>
+        </Helmet>
 
 
     <div className='grid col-span-3'>

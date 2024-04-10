@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Cards from "../Cards/Cards";
 import Hero from "../Hero/Hero";
 
@@ -10,7 +11,9 @@ const Home = () => {
     return (
         <div className=" md:max-w-7xl mx-auto " >
              
-    
+    <Helmet>
+        <title> EPIC | HOME </title>
+    </Helmet>
 
        <Update></Update>
        
