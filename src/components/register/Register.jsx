@@ -4,6 +4,10 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { Helmet } from "react-helmet-async";
 import { updateProfile } from "firebase/auth";
+import { IoMdEyeOff } from "react-icons/io";
+import { IoEye } from "react-icons/io5";
+
+
 
 
 
@@ -12,6 +16,8 @@ const Register = () => {
     const {register} = useContext(AuthContext)
     const [error,seterror] = useState('')
     //const [noerror,noseterror] = useState('')
+
+    const [showpassword,setshowpassword] = useState(false)
 
 
    
@@ -128,8 +134,37 @@ const Register = () => {
   <div className="form-control">
     <label className="label">
       <span className="label-text">Password</span>
+      
     </label>
-    <input name="password" type="password" placeholder="password" className="input input-bordered" required />
+<div  className=" relative">
+
+
+<input
+     name="password" 
+     type={ showpassword ? 'text' : 'password'  }
+      placeholder="password" 
+      className="input input-bordered" 
+      required />
+    <span className=" absolute -ml-5 mt-3 w-32" onClick={ ()=> setshowpassword(!showpassword) }>
+
+  {
+    showpassword ? <IoEye />
+
+    :  <IoMdEyeOff />
+
+
+  }
+
+  
+
+    </span>
+
+
+
+</div>
+
+
+
     <label className="label">
       <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
     </label>
@@ -138,9 +173,11 @@ const Register = () => {
   
  
   {
-        error && <div>
+        error &&  <div>
           <h4 className=" bg-red-500">{error} </h4>
         </div>  
+
+        
 
         
 

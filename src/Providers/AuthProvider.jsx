@@ -60,7 +60,8 @@ const AuthProvider = ({children} ) => {
       //googleLogin
 
       const googlelogin = ()=> {
-    
+
+        setloading(true)
         return signInWithPopup(auth ,googleprovider)
  
 
@@ -69,12 +70,17 @@ const AuthProvider = ({children} ) => {
       //facebookLogin
 
       const facebooklogin = ()=>{
+      
 
+        setloading(true)
         return signInWithPopup(auth,facebookprovider)
       }
       //logout
 
       const logout1 = ()=>{
+
+
+        setloading(true)
         return signOut(auth);
       }
 
@@ -88,6 +94,7 @@ const AuthProvider = ({children} ) => {
             if (currentuser) {
              
              setuser(currentuser)
+             setloading(false)
             } 
             else {
             setuser(null)
@@ -108,6 +115,7 @@ const AuthProvider = ({children} ) => {
          
         user,
         setuser,
+        loading,
         register,
         login,
         logout,
