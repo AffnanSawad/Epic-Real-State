@@ -3,6 +3,7 @@ import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { Helmet } from "react-helmet-async";
+import { updateProfile } from "firebase/auth";
 
 
 
@@ -70,6 +71,10 @@ const Register = () => {
 
     }
 
+    //userupdate
+
+   
+
 
 
 
@@ -133,7 +138,11 @@ const Register = () => {
   
  
   {
-        error && <h4 className=" bg-red-500">{error} </h4>
+        error && <div>
+          <h4 className=" bg-red-500">{error} </h4>
+        </div>  
+
+        
 
     }
   

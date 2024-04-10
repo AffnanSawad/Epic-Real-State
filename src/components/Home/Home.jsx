@@ -12,7 +12,7 @@ const Home = () => {
         <div className=" md:max-w-7xl mx-auto " >
              
     <Helmet>
-        <title> EPIC | HOME </title>
+        <title> EPIC-REAL-STATE </title>
     </Helmet>
 
        <Update></Update>
