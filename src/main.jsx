@@ -16,7 +16,6 @@ import Login from './components/login/Login';
 import Register from './components/register/Register';
 import AuthProvider from './Providers/AuthProvider';
 import UpdateProfile from './components/UpdateProfile/UpdateProfile';
-import UserProfile from './components/UserProfile/UserProfile';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import CardDetails from './CardDetails/CardDetails';
 import {HelmetProvider} from 'react-helmet-async'
@@ -62,12 +61,7 @@ const router = createBrowserRouter([
       <UpdateProfile></UpdateProfile>
     </PrivateRoute>
    },
-   {
-    path: '/user',
-    element: <PrivateRoute>
-      <UserProfile> </UserProfile>
-    </PrivateRoute>
-   },
+ 
    {
     path: '/card/:id',
     element: <PrivateRoute>

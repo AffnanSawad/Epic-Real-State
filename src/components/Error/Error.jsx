@@ -12,7 +12,7 @@ const Error = () => {
             
     <h1 className="text-2xl  font-extrabold" > 404 ! PAGE NOT FOUND!!! PLEASE GO TO THE RIGHT PAGE    </h1>
 
-    <h1 className="text-2xl  font-extabold"> Please go first <Link to='/' > <button className="btn btn-accent" >HOME</button> </Link>  </h1>
+    <h1 className="text-2xl  font-extabold"> Please go first <Link to='/login' > <button className="btn btn-accent" >LOG IN</button> </Link>  </h1>
 
 
         </div>

@@ -2,6 +2,7 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
+import UserProfile from "../UserProfile/UserProfile";
 
 
 const Nav = () => {
@@ -43,13 +44,7 @@ const Nav = () => {
       
        
     }
-    {
-      user && 
-      
-        <li> <NavLink to='/user'  > User Profile  </NavLink>  </li>
-      
-       
-    }
+  
      
      
      </>
@@ -93,17 +88,22 @@ const Nav = () => {
 
   
 <div className="tooltip  tooltip-bottom" data-tip={user.displayName}>
-  <button className="btn btn-info">USER</button>
-</div>
 
-<div className="avatar">
+
+
+
+
+
+
+<div tabIndex={0} className="avatar btn btn-circle btn-ghost">
   <div className="w-12 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-    <img src={user?.photoURL || "https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"} />
+    <img src={user?.photoURL ||"https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"} />
 
     <br />
 
     
   </div>
+</div>
 </div>
 
 <Link to='/'>
