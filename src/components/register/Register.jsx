@@ -172,10 +172,12 @@ const Register = () => {
 
   
  
-  {
+  { 
         error &&  <div>
           <h4 className=" bg-red-500">{error} </h4>
-        </div>  
+        </div> 
+        
+        
 
         
 
