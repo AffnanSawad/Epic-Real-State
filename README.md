@@ -6,7 +6,7 @@ LIVE LINK:   https://lustrous-naiad-77a1a4.netlify.app/
 
  LIVE-SITE URL : https://lustrous-naiad-77a1a4.netlify.app/
 
- http://localhost:5173/
+
 
  <FEATURES>
 
